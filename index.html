@@ -10,18 +10,35 @@
         <h2> Class Search</h2>
         <hr>
         
-
+        <table>
         <form action="/" method = "get">
-                Dept: <input type="text" name="dept"/> 
-                <br>                       
-                Number: <input type="text" name="number"/>
-                <br>
-                Area: <input type="text" name="area"/>
-                <br>
-                Title: <input type="text" name="title"/>
-                <br>
-                <input type="submit"/>
-        </form>  
+           <tr>
+            <td align="right">Dept: </td>
+            <td><input type="text" name="dept" value="{{dept_search}}" /></td>
+            </td>
+           </tr> 
+           <tr>
+            <td>Number: </td>
+            <td><input type="text" name="coursenum" value="{{number_search}}" /></td>
+            </td>
+           </tr> 
+           <tr>
+            <td align="right">Area: </td>
+            <td><input type="text" name="area" value="{{area_search}}" /></td>
+            </td>
+           </tr> 
+           <tr>
+            <td align="right">Title: </td>
+            <td><input type="text" name="title" value="{{title_search}}"/></td>
+            </td>
+           </tr> 
+
+           <tr> 
+                <td></td>
+                <td><input type="submit"/></td>
+           </tr>
+        </form> 
+        </table> 
 
         
        
@@ -35,6 +52,15 @@
                 <th>Num</th>
                 <th>Title</th>
             </tr>
+            {% for course in courses: %}
+            <tr>
+            <td><a href = "/regdetails?classid={{course["classid"]}}">{{course["classid"]}}</a></td>
+            <td>{{course["dept"]}}</td>
+            <td>{{course["area"]}}</td>
+            <td>{{course["coursenum"]}}</td>
+            <td>{{course["title"]}}</td>
+            </tr>
+            {% endfor %}
         </table> 
         <br>
 

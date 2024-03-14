@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrar's Office Class Search</title>
+    </head>
+
+    <body>
+        
+        <h1> Registrar's Office</h1>
+        <hr>
+
+        <h2> Class Details (class id {{classid}})</h2>
+        
+        <table border="1">
+            <tr>
+                <td><b>Course Id</b></td>
+                <td>{{info["courseid"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Days</b></td>
+                <td>{{info["days"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Start time</b></td>
+                <td>{{info["starttime"]}}</td>
+            </tr>
+            <tr>
+                <td><b>End time</b></td>
+                <td>{{info["endtime"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Building</b></td>
+                <td>{{info["bldg"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Room</b></td>
+                <td>{{info["roomnum"]}}</td>
+            </tr>
+        </table>
+
+        <h2> Course Details (course id {{info["courseid"]}})</h2>
+        
+        <table border="1">
+
+            
+            {% for deptnum in info["deptcoursenums"] %}
+            <tr>
+                <td><b>Dept and Number</b></td>
+                <td>{{deptnum[0]}} {{deptnum[1]}}</td>
+            </tr>
+            {% endfor %}
+            
+            <tr>
+                <td><b>Area</b></td>
+                <td>{{info["area"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Title</b></td>
+                <td>{{info["title"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Description</b></td>
+                <td>{{info["descrip"]}}</td>
+            </tr>
+            <tr>
+                <td><b>Prerequisites</b></td>
+                <td>{{info["prereqs"]}}</td>
+            </tr>
+           
+            {% for prof in info["profnames"] %}
+            <tr>
+                <td><b>Professors</b></td>
+                <td>{{prof}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+       <hr>
+       Click here to do <a href="/?dept={{dept}}&coursenum={{number}}&area={{area}}&title={{title}}"> another class search</a>
+        
+       
+        <hr>
+        Created by Vishva Ilavelan and Roger Weng
+        <hr>
+
+
+    </body>
+    
+</html>

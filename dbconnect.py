@@ -13,9 +13,12 @@ import sys
 DATABASE_URL = 'file:reg.sqlite?mode=ro'
 
 # search for specific classes with certain constraints
-def search(dept_input, num_input, area_input, title_input):
-
+def search(dept, num, area, title):
     try:
+        dept_input = escape_special_characters(dept)
+        num_input = escape_special_characters(num)
+        area_input = escape_special_characters(area)
+        title_input = escape_special_characters(title)
         with sqlite3.connect(DATABASE_URL, isolation_level=None,
                              uri=True) as connection:
             with contextlib.closing(connection.cursor()) as cursor:
@@ -141,3 +144,7 @@ def get_class_details(classid_input):
 "A server error occurred. Please contact the system administrator.")
 
         print(sys.argv[0] + ":", ex, file=sys.stderr)
+
+
+def escape_special_characters(string):
+    return string.replace('_', '\\_').replace('%', '\\%')
