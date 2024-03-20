@@ -46,18 +46,18 @@
 
         <table border="1">
             <tr>
-                <th>ClassId</th>
-                <th>Dept</th>
-                <th>Area</th>
-                <th>Num</th>
-                <th>Title</th>
+                <th align="left">ClassId</th>
+                <th align="left">Dept</th>
+                <th align="left">Num</th>
+                <th align="left">Area</th>
+                <th align="left">Title</th>
             </tr>
             {% for course in courses: %}
             <tr>
             <td><a href = "/regdetails?classid={{course["classid"]}}">{{course["classid"]}}</a></td>
             <td>{{course["dept"]}}</td>
-            <td>{{course["area"]}}</td>
             <td>{{course["coursenum"]}}</td>
+            <td>{{course["area"]}}</td>
             <td>{{course["title"]}}</td>
             </tr>
             {% endfor %}

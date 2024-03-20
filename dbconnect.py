@@ -66,6 +66,7 @@ def search(dept, num, area, title):
 # returns necessary data for class details query, based on a given
 # classid
 def get_class_details(classid_input):
+    
 
     try:
 
