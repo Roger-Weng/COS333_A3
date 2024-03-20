@@ -146,6 +146,8 @@ def get_class_details(classid_input):
 
         print(sys.argv[0] + ":", ex, file=sys.stderr)
 
+        return return_list
+
 
 def escape_special_characters(string):
     return string.replace('_', '\\_').replace('%', '\\%')

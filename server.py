@@ -65,7 +65,7 @@ def regdetails():
    title = flask.request.cookies.get('title')
 
    querey_results = dbconnect.get_class_details(classid)
-   if querey_results[0] == True:
+   if (querey_results[0] == True):
        html_code = flask.render_template('regdetails.html', info = querey_results[1], classid = classid, dept = dept, 
                                          number = number, area = area, title = title)
    else:
