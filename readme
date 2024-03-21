@@ -7,51 +7,35 @@ We did mostly pair programming on the assignment.
 
 Here's the contributions from Yan (Roger) Weng: 
 In server.py, I wrote part of the index function, including the template rendering part. 
-I also wrote parts of the regdetails function, 
-In dbconnect.py, I incorporated the escape_special_character function into the file
-so that the code can be modularized better. 
-
-
-
-
+I also wrote parts of the regdetails function. That includes the requesting cookie part of the code that makes the application stateful to implement the page link back to the primary page. In addition, I also wrote part of the code that gets dept, number, area, and title from the database. In dbconnect.py, I incorporated the escape_special_character function into the file so that the code can be modularized better. 
 
 Here's the contributions from Vishva Ilavelan:
-
+I helped write the code for runserver.py and server.py, as well as the template engine code. 
+In runserver.py, I helped configure argparse and helped write the code to run our flask server. 
+In server.py, I helped write the logic for handling stateful returns to the get overviews / primary 
+page, parse form arguments, as well as handle errors associated with database corruption and 
+erroneous classids. I also helped write the HTML templates index.html, regdetails.html, and error.html.
+I helped write the logic for implementing the table formatting / general page layout, as well as the clickability
+of the classids and other pages. 
 
 
 
 Help received: We received help from Professor Dondero on Ed, particularly on
-how the words and boxes are aligned.
+how the words and boxes should be aligned. 
 
 Sources of information: Apart from questions we asked on Ed, 
 we looked at lecture slides and handouts while doing the assignment.
-
 We adapted code from lectures and handouts for our general use. 
-We used the general structure for database queries and the with statements 
-from the slides  and handouts in database programming 1 and 2. We also structured 
-our db file, particularly with its functions and URL similar to the code
-from lectures 1 and 2.
 
-We adapted code for our approach to developing and managing the GUI. Particularly, 
-we adapted code and utilized the associated handouts for GUI programming one
-and GUI programming two (particularly coloredisplayer.py), adapting code structure,
-particularly for the creation of widgets, event handling, etc. 
+Specifically, we adapted and referenced the code corresponding to the
+Web Programming lecture. Furthermore we utilized / adapted code and referenced 
+code and content discussed in Python Server-Side Web Programming One and Two
 
-Lastly, we also adapted code for the general purpose of creating sockets and
-connection. We adapted the general structure of try excepts and with statements,
-as well as the broader patterns corresponding to reading and writing data through
-a socket. This code from which we adapted corresponds to the Network Programming 1/2
-and associated handouts, particularly commgraph2.py
-
-We also referenced the documentation for https://docs.python.org/3/library/argparse.html
-as well as the documentation for PyQt https://doc.qt.io/qt.html#qtforpython while 
-developing our program.
-
-Time spent on the assignment: 15 hours
+Time spent on the assignment: 10 hours
 
 Assessment of the assignment:
-This assignment was a good introduction into server side programming with Python. It also
-allowed us to better understand other parts of web programming, particularly HTML, especially
-forms. We also were able to learn a lot about template engines while working on the assignment, 
-which was rea
+This assignment was a good review for server-side web programming. It allowed us to better
+understand Python Flask framework and Jinja2 template engine. We also learned a lot 
+about how to use cookies.
+
 All known bugs: No

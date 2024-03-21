@@ -18,7 +18,7 @@ def inputhelper():
 def main():
     port = inputhelper()
     try:
-        server.app.run(host='0.0.0.0', port=port, debug=True)
+        server.app.run(host='0.0.0.0', port=port)
     except Exception as ex:
         print(sys.argv[0] + ":", ex, file=sys.stderr)
         sys.exit(1)
