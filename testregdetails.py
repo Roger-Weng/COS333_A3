@@ -8,8 +8,27 @@ import argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
+import sqlite3
+import contextlib
 
 #-----------------------------------------------------------------------
+
+DATABASE_URL = 'file:reg.sqlite?mode=rw'
+
+def getclassids(): 
+    try:
+        with sqlite3.connect(DATABASE_URL, isolation_level=None,
+                             uri=True) as connection:
+            with contextlib.closing(connection.cursor()) as cursor:
+                stmt_str = "SELECT classid "
+                stmt_str += "FROM classes "
+                cursor.execute(stmt_str)
+                table = cursor.fetchall()
+                return table      
+            
+    except Exception as ex:
+        print(ex, file=sys.stderr)
+        sys.exit(1)
 
 def get_args():
 
@@ -70,12 +89,23 @@ def main():
         options = Options()
         options.add_argument('-headless')
         driver = webdriver.Firefox(options=options)
+    
+    table = getclassids()
+
+
 
     run_test(server_url, driver, '8321')
     run_test(server_url, driver, '9032')
 
-    # Add more tests here.
+    run_test(server_url, driver, '  9032')
+    run_test(server_url, driver, '9032   ')
+    run_test(server_url, driver, '  8321  ')
+    run_test(server_url, driver, 'aksdfjlka')
+    run_test(server_url, driver, ' dsf 9032')
+    run_test(server_url, driver, '')
 
+    for row in table:
+       run_test(server_url, driver, str(row[0]))
     driver.quit()
 
 if __name__ == '__main__':
