@@ -112,8 +112,7 @@ def main():
     run_test(server_url, driver, "8755")
     run_test(server_url, driver, "8381")
     run_test(server_url, driver, '8253')
-    num = 9177
-    run_test(server_url, driver, num)
+    run_test(server_url, driver, "9177")
     run_test(server_url, driver, "9014")
 
 
