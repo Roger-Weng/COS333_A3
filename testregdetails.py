@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------
 # testregdetails.py
-# Author: Bob Dondero
+# Authors: Roger Weng, Vishva Ilavelan
 #-----------------------------------------------------------------------
 
 import sys
@@ -90,9 +90,6 @@ def main():
         options.add_argument('-headless')
         driver = webdriver.Firefox(options=options)
     
-    table = getclassids()
-
-
 
     run_test(server_url, driver, '8321')
     run_test(server_url, driver, '9032')
@@ -103,10 +100,23 @@ def main():
     run_test(server_url, driver, 'aksdfjlka')
     run_test(server_url, driver, ' dsf 9032')
     run_test(server_url, driver, '')
+    run_test(server_url, driver, "7899")
+    run_test(server_url, driver, "7909")
+    run_test(server_url, driver, "8038")
+    run_test(server_url, driver, "10022")
+    run_test(server_url, driver, "8069")
+    run_test(server_url, driver, "8038")
+    run_test(server_url, driver, "8019")
+    run_test(server_url, driver, "8012")
+    run_test(server_url, driver, "7959")
+    run_test(server_url, driver, "8755")
+    run_test(server_url, driver, "8381")
+    run_test(server_url, driver, '8253')
+    num = 9177
+    run_test(server_url, driver, num)
+    run_test(server_url, driver, "9014")
 
-    for row in table:
-       run_test(server_url, driver, str(row[0]))
-    driver.quit()
+
 
 if __name__ == '__main__':
     main()
