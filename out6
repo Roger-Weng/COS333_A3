@@ -1,0 +1,297 @@
+-----------------
+classid: 8321
+Course Id 3672
+Days TTh
+Start time 11:00 AM
+End time 12:20 PM
+Building FRIEN
+Room 006
+Dept and Number COS 333
+Area
+Title Advanced C%Science Programming Techniques
+Description This is a course about the practice of programming. Programming is more than just writing code. Programmers must also assess tradeoffs, choose among design alternatives, debug and test, improve performance, and maintain software written by themselves & others. At the same time, they must be concerned with compatibility, robustness, and reliability, while meeting specifications. Students will have the opportunity to develop these skills by working on their own code and in group projects.
+Prerequisites COS 217 and COS 226.
+Professor Brian W. Kernighan
+-----------------
+classid: 9032
+Course Id 4026
+Days W
+Start time 07:30 PM
+End time 08:50 PM
+Building ICAHN
+Room ATR
+Dept and Number CHM 233
+Dept and Number COS 233
+Dept and Number ISC 233
+Dept and Number MOL 233
+Dept and Number PHY 233
+Area ST
+Title An Integrated, Quantitative Introduction to the Natural Sciences II
+Description An integrated, mathematically and computationally sophisticated introduction to physics and chemistry, drawing on examples from biological systems. This year-long 4 course sequence is a multi-disciplinary course taught across 4 departments with the following faculty involved in teaching the course: W. Bialek , C. Callan, J. Shaevitz (PHY); D. Botstein (MOL); M. Singh (COS); E. Carter (MAE).
+Prerequisites Familiarity with calculus at the level of MAT 103/104 or Advanced Placement Calculus BC, solid high school physics and chemistry courses. Students must have completed ISC/CHM/COS/MOL/PHY 231 and 232 in the Fall.
+Professor Curtis G. Callan
+Professor David Botstein
+Professor Mona Singh
+-----------------
+classid:   9032
+Message: Unable to locate element:   9032; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+-----------------
+classid: 9032   
+Message: Unable to locate element: 9032   ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+-----------------
+classid:   8321  
+Message: Unable to locate element:   8321  ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+-----------------
+classid: aksdfjlka
+Message: Unable to locate element: aksdfjlka; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+-----------------
+classid:  dsf 9032
+Message: Unable to locate element:  dsf 9032; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+-----------------
+classid: 
+Message: Unable to locate element: ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+-----------------
+classid: 7899
+Course Id 3496
+Days MTWThF
+Start time 10:00 AM
+End time 10:50 AM
+Building FRIST
+Room 210
+Dept and Number ARA 102
+Area
+Title Elementary Arabic II
+Description This course continues the study of Modern Standard Arabic commenced in Arabic 101. Emphasis is placed on grammatical analysis; writing and reading of increasingly longer, unvocalized texts; further vocabulary acquisition, and continued practice in listening and speaking Modern Standard Arabic.
+Prerequisites ARA 101 or Permission of Instructor.
+Professor Hebatalla Elkhateeb-Musharraf
+Professor Matthew R. Fischer
+Professor Nancy A. Coffin
+-----------------
+classid: 7909
+Course Id 3498
+Days MTWThF
+Start time 10:00 AM
+End time 10:50 AM
+Building FRIST
+Room 208
+Dept and Number ARA 107
+Area
+Title Intermediate Arabic II
+Description Study of Arabic grammar and syntax, and use of the language in functional contexts. Reading of extra material from articles, newspapers, short stories. Discussions are held in the Arabic language to enhance the students' speaking skills.
+Prerequisites ARA 105 or Permission Of Instructor.
+Professor Gregory J. Bell
+Professor Matthew R. Fischer
+-----------------
+classid: 8038
+Course Id 3572
+Days MW
+Start time 10:00 AM
+End time 10:50 AM
+Building MCCOH
+Room 50
+Dept and Number ARC 262A
+Dept and Number ART 262
+Dept and Number CEE 262A
+Dept and Number EGR 262A
+Dept and Number URB 262A
+Area
+Title Structures and the Urban Environment
+Description This course focuses on structural engineering as a new art form begun during the Industrial Revolution and flourishing today in long-span bridges, thin shell concrete vaults, and tall buildings. Through critical analysis of major works students are introduced to the methods of evaluating structures as an art form. Students study the works and ideas of individual structural artists through their elementary calculations, their builder's mentality and their aesthetic imagination. Students examine contemporary exemplars that are essential to the understanding of 21st century structuring of cities with illustrations taken from various cities.
+Prerequisites
+Professor David P. Billington
+Professor Maria E. Garlock
+-----------------
+classid: 10022
+Course Id 4446
+Days W
+Start time 01:30 PM
+End time 04:20 PM
+Building NA185
+Room 301
+Dept and Number ARC 202
+Dept and Number VIS 202
+Area LA
+Title Introductory Drawing
+Description This course approaches drawing as a way of thinking and seeing. Students will be introduced to a range of drawing issues, as well as a variety of media, including charcoal, graphite, ink, oil stick, collage, string, wire and clay. Subject matter includes still life, the figure, landscape and architecture. Representation, abstraction and working from imagination will be explored. A structured independent project will be completed at the end of the term.
+Prerequisites
+Professor Eve M. Aschheim
+-----------------
+classid: 8069
+Course Id 3581
+Days TTh
+Start time 08:30 AM
+End time 09:50 AM
+Building EQUAE
+Room E225
+Dept and Number ARC 364
+Dept and Number CEE 364
+Area
+Title Materials in Civil Engineering
+Description Lectures on structure and properties of building materials including concrete, steel, asphalt, and wood; fracture mechanics; strength testing; mechanisms of deterioration (corrosion; freeze-thaw cycles, pollution). Labs on brittle fracture, heat treatment of steel, strength of concrete, mechanical properties of wood.
+Prerequisites CEE 205
+Professor George W. Scherer
+-----------------
+classid: 8038
+Course Id 3572
+Days MW
+Start time 10:00 AM
+End time 10:50 AM
+Building MCCOH
+Room 50
+Dept and Number ARC 262A
+Dept and Number ART 262
+Dept and Number CEE 262A
+Dept and Number EGR 262A
+Dept and Number URB 262A
+Area
+Title Structures and the Urban Environment
+Description This course focuses on structural engineering as a new art form begun during the Industrial Revolution and flourishing today in long-span bridges, thin shell concrete vaults, and tall buildings. Through critical analysis of major works students are introduced to the methods of evaluating structures as an art form. Students study the works and ideas of individual structural artists through their elementary calculations, their builder's mentality and their aesthetic imagination. Students examine contemporary exemplars that are essential to the understanding of 21st century structuring of cities with illustrations taken from various cities.
+Prerequisites
+Professor David P. Billington
+Professor Maria E. Garlock
+-----------------
+classid: 8019
+Course Id 3553
+Days W
+Start time 01:30 PM
+End time 04:20 PM
+Building MCCKH
+Room 362
+Dept and Number ART 544
+Area
+Title Seminar in Northern Renaissance: The Altarpiece
+Description Consideration of this foundational object of Western painting, in all its theorizations, histories, materialities, and afterlives. Span will be roughly 1400-1700, but the course will delve into Byzantine traditions and move forward to the nineteenth century. We will focus upon specific objects from Northern and Southern Europe and the early modern Americas. Topics include iconoclasm, allegory, collaboration, ritual, secularization, movement, publics, theft, patronage, and more.
+Prerequisites
+Professor Christopher P. Heuer
+-----------------
+classid: 8012
+Course Id 3546
+Days M
+Start time 01:30 PM
+End time 04:20 PM
+Building MCCKH
+Room 362
+Dept and Number ART 410
+Area LA
+Title Seminar. Greek Art
+Description The course will examine the birth and early development of Greek figural art from the 8th through the 5th centuries BCE with particular focus on distinct regional variations in an effort to describe more fully the genesis of artistic traditions that lasted 1,000 years in antiquity and stimulated a modern renaissance in Europe. Readings will be drawn both from original literature in translation and modern critical studies.
+Prerequisites
+Professor William A. Childs
+-----------------
+classid: 7959
+Course Id 3529
+Days T
+Start time 01:30 PM
+End time 04:20 PM
+Building ARCHB
+Room N106
+Dept and Number ARC 576
+Dept and Number ART 598
+Dept and Number MOD 501
+Area
+Title Advanced Topics in Modern Architecture: Modernist Dilemmas: Brasilia and Chandigarh turn 50
+Description During the twentieth century, several new capitals were built from scratch, for economic and political reasons. Two of these - Brasilia and Chandigarh -- share several traits, partly due to the impact of Le Corbusier. The full force of modern architecture was put to the test. This seminar will reassess these two capitals which are turning 50, studying the original project from different and often conflicting perspectives. Particular attention will be paid to the role of popular and professional media in the global promotion and circulation of the new cities.
+Prerequisites
+Professor Beatriz Colomina
+Professor Esther da Costa Meyer
+-----------------
+classid: 8755
+Course Id 3873
+Days Th
+Start time 01:30 PM
+End time 04:20 PM
+Building
+Room
+Dept and Number FIN 515
+Area
+Title Portfolio Theory and Asset Management
+Description Covers a number of advanced topics related to asset management and asset pricing. Topics include mean-variance analysis, CAPM, APT, market efficiency, delegated money management, stock return predictability, bubbles and crashes, social interaction and investor behavior, security analysts and investor relations, and mutual fund performance and organization.
+Prerequisites FIN 501 and FIN 522.
+Professor Asani Sarkar
+-----------------
+classid: 8381
+Course Id 3707
+Days MW
+Start time 02:30 PM
+End time 03:20 PM
+Building FRIST
+Room 228
+Dept and Number EAS 336
+Dept and Number HIS 319
+Area HA
+Title The Making and Transformation of Medieval China: 300-1200
+Description This course provides a survey of the history of China from the dissolution of the first unified empire to the eve of the Mongol invasion. Key issues include the Tang-Song transformation, influence of Buddhism and Neo-Confucianism, the rise of literati culture, "education and the examination system, the development of civil service careers, bureaucracy and rulership, and commercialism".
+Prerequisites
+-----------------
+classid: 8253
+Course Id 3640
+Days MTWTh
+Start time 10:00 AM
+End time 10:50 AM
+Building FIRES
+Room B06M
+Dept and Number CLA 476
+Dept and Number LIN 476
+Area
+Title Introduction to Sanskrit II
+Description A continuation of CLA 475/LIN 475. Students will continue to learn the essentials of Sanskrit grammar, and to refine their reading skills.
+Prerequisites CLA 475/LIN 475 or permission of instructor.
+Professor Herman W. Tull
+-----------------
+classid: 9177
+Course Id 4086
+Days T
+Start time 12:30 PM
+End time 01:20 PM
+Building FRIEN
+Room 112
+Dept and Number MAE 440D
+Area
+Title Senior Project with Design
+Description Similar to 440 with the principle difference that the team or group project must incorporate aspects and principles of design, whether for a system, product, vehicle, device, software, or apparatus. The year-long senior project with design may be used to satisfy a portion of the department's design requirement.
+Prerequisites
+Professor Luigi Martinelli
+-----------------
+classid: 9014
+Course Id 4018
+Days M
+Start time 12:30 PM
+End time 01:20 PM
+Building SCCAH
+Room 203
+Dept and Number HLS 107
+Dept and Number MOG 107
+Area
+Title Advanced Modern Greek
+Description Advanced composition and oral practice aimed at developing idiomatic written and spoken style. Discussions entirely in Greek. Introduces students to contemporary Greek culture and literature through the study of works by Cavafy, Sikelianos, Seferis, Elytis, Ritsos, and Anagnostakis, among others. Readings from articles on current Greek topics.
+Prerequisites HLS 105 or equivalent, or permission of instructor.
