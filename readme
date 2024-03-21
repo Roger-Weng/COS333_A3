@@ -6,7 +6,8 @@ Contributions:
 We did mostly pair programming on the assignment. 
 
 Here's the contributions from Yan (Roger) Weng: 
-In server.py, I wrote part of the index function, 
+In server.py, I wrote part of the index function, including the template rendering part. 
+I also wrote parts of the regdetails function, 
 In dbconnect.py, I incorporated the escape_special_character function into the file
 so that the code can be modularized better. 
 
@@ -14,27 +15,13 @@ so that the code can be modularized better.
 
 
 
-
-
-
-
 Here's the contributions from Vishva Ilavelan:
 
-In reg.py Vishva helped to write the event handling functions that display query data, 
-as well as the logic behind the dialog boxes. Furthermore, Vishva also worked on 
-developing the nesting for the different frames in reg.py, as well as the client-side 
-error handling. In dbconnect.py, Vishva helped alter the functions so that the query 
-data structures they returned adhered to the communication protocol. 
-In regserver.py, Vishva helped write the socket connection and connection request 
-handling code. Vishva also helped write the code for test automation. Finally,
-Vishva helped set up the some of the different widgets for the GUI, especially 
-the labels and push button
 
 
 
-
-Help received: We received help from Professor Dondero on Ed, particularly for 
-error messages and tetsing help
+Help received: We received help from Professor Dondero on Ed, particularly on
+how the words and boxes are aligned.
 
 Sources of information: Apart from questions we asked on Ed, 
 we looked at lecture slides and handouts while doing the assignment.

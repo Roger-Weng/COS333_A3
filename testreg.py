@@ -159,9 +159,9 @@ def main():
     run_test(driver, {"title":  "'%_%_%_%%%%%%___%%_%__%'"})
     
     # full search 
-    num = 178
 
-    run_test(driver, {"dept": "FRS", "coursenum": num, "title": "Modern Financial Markets", "area": "SA"})
+
+    run_test(driver, {"dept": "FRS", "coursenum": "178", "title": "Modern Financial Markets", "area": "SA"})
     run_test(driver, {"dept": "WWS", "coursenum": "556B", "title": "Topics in International Relations: International Justice"})
     run_test(driver, {"dept": "ORF", "coursenum": "527", "title": 'Stochastic Calculus and Finance'})
     run_test(driver, {"dept": "MAT", "coursenum": "203", "title": 'Advanced Multivariable Calculus', "area": "QR"})
