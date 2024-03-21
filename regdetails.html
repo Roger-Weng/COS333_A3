@@ -11,7 +11,7 @@
 
         <h2> Class Details (class id {{classid}})</h2>
         
-        <table border="1">
+        <table border="1" id="classDetailsTable">
             <tr>
                 <td><b>Course Id</b></td>
                 <td>{{info["courseid"]}}</td>
@@ -40,7 +40,7 @@
 
         <h2> Course Details (course id {{info["courseid"]}})</h2>
         
-        <table border="1">
+        <table border="1" id="courseDetailsTable">
 
             
             {% for deptnum in info["deptcoursenums"] %}
