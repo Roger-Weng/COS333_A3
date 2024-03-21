@@ -44,7 +44,7 @@ def regdetails():
   
 
    
-   if classid is "": 
+   if classid == "": 
        html_code = flask.render_template('error.html', error_message = "missing classid")
        response = flask.make_response(html_code)
        return response
