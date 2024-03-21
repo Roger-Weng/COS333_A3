@@ -11,22 +11,12 @@ In dbconnect.py, I incorporated the escape_special_character function into the f
 so that the code can be modularized better. 
 
 
-
-
-
-
 In reg.py, Roger wrote the functions that create control frame, list frame,
 central frame, window. In additon, Roger also wrote part of the functions 
 that handle form sumbit and the main function. In regserver.py, Roger mainly 
 wrote the parts that handle get overviews and the main function. dbconnect.py 
 is very similar to what we used in assignment 1. Roger combined the functions 
 in assignment 1 into one single get_class_details function.
-
-
-
-
-
-
 
 
 
@@ -81,10 +71,8 @@ developing our program.
 Time spent on the assignment: 15 hours
 
 Assessment of the assignment:
-The assignment helped us to learn more about GUI programming and network
-programming in Python. Specifically, the assignment helps us better understand
-how to compose a program with Python PyQt5 library. In addition, we also learned
-a lot about modularization and testing. One suggestion of improvement is
-hat it might also be helpful for us to learn how to test GUIs more effectively
-
+This assignment was a good introduction into server side programming with Python. It also
+allowed us to better understand other parts of web programming, particularly HTML, especially
+forms. We also were able to learn a lot about template engines while working on the assignment, 
+which was rea
 All known bugs: No

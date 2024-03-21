@@ -15,10 +15,7 @@ DATABASE_URL = 'file:reg.sqlite?mode=ro'
 # search for specific classes with certain constraints
 def search(dept, num, area, title):
     try:
-        dept_input = escape_special_characters(dept)
-        num_input = escape_special_characters(num)
-        area_input = escape_special_characters(area)
-        title_input = escape_special_characters(title)
+        values = (escape_special_characters(dept), escape_special_characters(num), escape_special_characters(area), escape_special_characters(title))
         with sqlite3.connect(DATABASE_URL, isolation_level=None,
                              uri=True) as connection:
             with contextlib.closing(connection.cursor()) as cursor:
@@ -35,10 +32,10 @@ def search(dept, num, area, title):
 
                 # add more AND statements here for all fields
                 stmt_str += "ORDER BY dept, coursenum, classid "
-                cursor.execute(stmt_str, [f"%{dept_input}%",
-                                          f"%{num_input}%",
-                                          f"%{area_input}%",
-                                          f"%{title_input}%"])
+                cursor.execute(stmt_str, [f"%{values[0]}%",
+                                          f"%{values[1]}%",
+                                          f"%{values[2]}%",
+                                          f"%{values[3]}%"])
                 table = cursor.fetchall()
                 return_list = []
                 return_list.append(True)

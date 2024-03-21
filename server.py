@@ -22,12 +22,14 @@ def index():
     query_results = dbconnect.search(dept, number, area, title)
     if query_results[0] is True:
         html_code = flask.render_template('index.html',
-                                          courses=query_results[1], dept_search = dept,
-                                          number_search = number, area_search = area,
+                                          courses=query_results[1],
+                                          dept_search = dept,
+                                          number_search = number,
+                                          area_search = area,
                                           title_search = title)
     else:
-        html_code = flask.render_template('error.html',
-                                          error_message = query_results[1])
+        html_code=flask.render_template('error.html',
+                                        error_message=query_results[1])
     response = flask.make_response(html_code)
     response.set_cookie("dept", dept)
     response.set_cookie("number", number)
@@ -38,30 +40,35 @@ def index():
 @app.route("/regdetails", methods=["GET"])
 def regdetails():
     classid = flask.request.args.get("classid", default="")
-    if classid == "": 
-        html_code = flask.render_template('error.html', error_message = "missing classid")
+    if classid == "":
+        html_code=flask.render_template('error.html', 
+                                        error_message=
+                                        "missing classid")
         response = flask.make_response(html_code)
         return response
-    try:  
+    try:
         classid = int(classid)
     except ValueError:
-        html_code = flask.render_template('error.html', error_message="non-integer classid")
+        html_code = flask.render_template('error.html', 
+                                          error_message=
+                                          "non-integer classid")
         response = flask.make_response(html_code)
-        return response  
+        return response
     dept = flask.request.cookies.get('dept')
     number = flask.request.cookies.get('number')
     area = flask.request.cookies.get('area')
     title = flask.request.cookies.get('title')
     querey_results = dbconnect.get_class_details(classid)
     if querey_results[0] is True:
-        html_code = flask.render_template('regdetails.html', info = querey_results[1], classid = classid, dept = dept, 
-                                         number = number, area = area, title = title)
+        html_code = flask.render_template('regdetails.html',
+                                          info = querey_results[1],
+                                          classid = classid,
+                                          dept = dept,
+                                          number = number,
+                                          area = area, title = title)
     else:
-        html_code = flask.render_template('error.html', error_message = querey_results[1])
+        html_code = flask.render_template('error.html', 
+                                          error_message=
+                                          querey_results[1])
     response = flask.make_response(html_code)
     return response
-
-
-
-
-
