@@ -15,7 +15,10 @@ DATABASE_URL = 'file:reg.sqlite?mode=ro'
 # search for specific classes with certain constraints
 def search(dept, num, area, title):
     try:
-        values = (escape_special_characters(dept), escape_special_characters(num), escape_special_characters(area), escape_special_characters(title))
+        values = (escape_special_characters(dept),
+                  escape_special_characters(num),
+                  escape_special_characters(area),
+                  escape_special_characters(title))
         with sqlite3.connect(DATABASE_URL, isolation_level=None,
                              uri=True) as connection:
             with contextlib.closing(connection.cursor()) as cursor:
@@ -63,7 +66,6 @@ def search(dept, num, area, title):
 # returns necessary data for class details query, based on a given
 # classid
 def get_class_details(classid_input):
-    
 
     try:
 

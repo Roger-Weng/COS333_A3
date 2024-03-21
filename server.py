@@ -41,7 +41,7 @@ def index():
 def regdetails():
     classid = flask.request.args.get("classid", default="")
     if classid == "":
-        html_code=flask.render_template('error.html', 
+        html_code=flask.render_template('error.html',
                                         error_message=
                                         "missing classid")
         response = flask.make_response(html_code)
@@ -49,7 +49,7 @@ def regdetails():
     try:
         classid = int(classid)
     except ValueError:
-        html_code = flask.render_template('error.html', 
+        html_code = flask.render_template('error.html',
                                           error_message=
                                           "non-integer classid")
         response = flask.make_response(html_code)
@@ -67,7 +67,7 @@ def regdetails():
                                           number = number,
                                           area = area, title = title)
     else:
-        html_code = flask.render_template('error.html', 
+        html_code = flask.render_template('error.html',
                                           error_message=
                                           querey_results[1])
     response = flask.make_response(html_code)
