@@ -12,7 +12,7 @@ def index():
     area = flask.request.args.get("area")
     title = flask.request.args.get("title")
 
-    if dept is None: 
+    if dept is None:
         dept = ""
     if number is None:
         number = ""
@@ -23,11 +23,13 @@ def index():
     
     query_results = dbconnect.search(dept, number, area, title)
     if (query_results[0] == True):
-        print(title)
-        html_code = flask.render_template('index.html', courses=query_results[1], dept_search = dept, 
-                                          number_search = number, area_search = area, title_search = title)
+        html_code = flask.render_template('index.html', 
+                                          courses=query_results[1], dept_search = dept, 
+                                          number_search = number, area_search = area, 
+                                          title_search = title)
     else:
-        html_code = flask.render_template('error.html', error_message = query_results[1])
+        html_code = flask.render_template('error.html', 
+                                          error_message = query_results[1])
     
     response = flask.make_response(html_code)
     response.set_cookie("dept", dept)
@@ -50,7 +52,7 @@ def regdetails():
        return response
    
    try:  
-     classid = int(classid)
+       classid = int(classid)
    except ValueError as ex:
        html_code = flask.render_template('error.html', error_message="non-integer classid")
        response = flask.make_response(html_code)
@@ -66,16 +68,14 @@ def regdetails():
 
    querey_results = dbconnect.get_class_details(classid)
    if (querey_results[0] == True):
-       html_code = flask.render_template('regdetails.html', info = querey_results[1], classid = classid, dept = dept, 
+        html_code = flask.render_template('regdetails.html', info = querey_results[1], classid = classid, dept = dept, 
                                          number = number, area = area, title = title)
    else:
-       html_code = flask.render_template('error.html', error_message = querey_results[1])
+        html_code = flask.render_template('error.html', error_message = querey_results[1])
        
    response = flask.make_response(html_code)
    return response
 
-def escape_special_characters(string):
-    return string.replace('_', '\\_').replace('%', '\\%')
 
 
 
