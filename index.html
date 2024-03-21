@@ -14,28 +14,28 @@
         <form action="/" method = "get">
            <tr>
             <td align="right">Dept: </td>
-            <td><input type="text" name="dept" value="{{dept_search}}" /></td>
+            <td><input type="text" name="dept" value="{{dept_search}}" id="deptInput"/></td>
             </td>
            </tr> 
            <tr>
             <td>Number: </td>
-            <td><input type="text" name="coursenum" value="{{number_search}}" /></td>
+            <td><input type="text" name="coursenum" value="{{number_search}}" id="coursenumInput"/></td>
             </td>
            </tr> 
            <tr>
             <td align="right">Area: </td>
-            <td><input type="text" name="area" value="{{area_search}}" /></td>
+            <td><input type="text" name="area" value="{{area_search}}" id="areaInput"/></td>
             </td>
            </tr> 
            <tr>
             <td align="right">Title: </td>
-            <td><input type="text" name="title" value="{{title_search}}"/></td>
+            <td><input type="text" name="title" value="{{title_search}}" id="titleInput"/></td>
             </td>
            </tr> 
 
            <tr> 
                 <td></td>
-                <td><input type="submit"/></td>
+                <td><input type="submit" id="submitButton"/></td>
            </tr>
         </form> 
         </table> 
@@ -44,7 +44,7 @@
        
         <hr>
 
-        <table border="1">
+        <table border="1" id="overviewsTable">
             <tr>
                 <th align="left">ClassId</th>
                 <th align="left">Dept</th>
