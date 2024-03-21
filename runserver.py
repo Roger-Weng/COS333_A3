@@ -1,9 +1,8 @@
+
 #-----------------------------------------------------------------------
 # runserver.py
 # Authors: Roger Weng, Vishva Ilavelan
 #-----------------------------------------------------------------------
-
-
 import sys
 import argparse
 import server
