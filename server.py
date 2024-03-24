@@ -1,6 +1,7 @@
 
 import flask
 import dbconnect
+import urllib.parse
 
 
 app = flask.Flask(__name__, template_folder=".")
@@ -54,10 +55,10 @@ def regdetails():
                                           "non-integer classid")
         response = flask.make_response(html_code)
         return response
-    dept = flask.request.cookies.get('dept')
-    number = flask.request.cookies.get('number')
-    area = flask.request.cookies.get('area')
-    title = flask.request.cookies.get('title')
+    dept =  urllib.parse.quote_plus(flask.request.cookies.get('dept'))
+    number =  urllib.parse.quote_plus(flask.request.cookies.get('number'))
+    area =  urllib.parse.quote_plus(flask.request.cookies.get('area'))
+    title =  urllib.parse.quote_plus(flask.request.cookies.get('title'))
     querey_results = dbconnect.get_class_details(classid)
     if querey_results[0] is True:
         html_code = flask.render_template('regdetails.html',
